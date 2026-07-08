@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cart — Paw Chic</title>
+<meta name="description" content="Your Paw Chic shopping cart.">
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Checkout</span>
+    <h1>Your Shopping Cart</h1>
+    <div class="crumbs"><a href="index.html">Home</a> · Cart</div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="cart-layout">
+      <div data-cart-list></div>
+      <aside class="cart-summary" data-cart-summary>
+        <h3>Order Summary</h3>
+        <div class="cart-row"><span>Subtotal</span><span data-sub>$0.00</span></div>
+        <div class="cart-row"><span>Shipping</span><span data-ship>Free</span></div>
+        <div class="cart-row"><span>Estimated Tax</span><span>—</span></div>
+        <div class="coupon">
+          <input type="text" placeholder="Coupon code">
+          <button>Apply</button>
+        </div>
+        <div class="cart-row total"><span>Total</span><span data-total>$0.00</span></div>
+        <a href="#" class="btn btn-primary" style="width:100%;margin-top:18px">Secure Checkout</a>
+        <p style="text-align:center;color:var(--muted);font-size:.78rem;margin-top:14px">🔒 Encrypted & secure. All major cards accepted.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

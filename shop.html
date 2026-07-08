@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shop — Paw Chic</title>
+<meta name="description" content="Browse the full Paw Chic collection: dog and cat essentials, luxury beds, feeding, grooming, toys and treats.">
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">The Boutique</span>
+    <h1>Shop the Collection</h1>
+    <p>Every piece is designed and tested with love — for pets and the people who spoil them.</p>
+    <div class="crumbs"><a href="index.html">Home</a> · Shop</div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container shop-layout">
+
+    <aside class="filters">
+      <h4>Refine</h4>
+      <div class="filter-group">
+        <h5>Category</h5>
+        <label><input type="checkbox" data-filter-cat value="Dog Essentials"> Dog Essentials</label>
+        <label><input type="checkbox" data-filter-cat value="Cat Essentials"> Cat Essentials</label>
+        <label><input type="checkbox" data-filter-cat value="Luxury Beds"> Luxury Beds</label>
+        <label><input type="checkbox" data-filter-cat value="Toys & Treats"> Toys & Treats</label>
+        <label><input type="checkbox" data-filter-cat value="Grooming & Care"> Grooming & Care</label>
+        <label><input type="checkbox" data-filter-cat value="Feeding Essentials"> Feeding Essentials</label>
+      </div>
+      <div class="filter-group">
+        <h5>Pet Type</h5>
+        <label><input type="checkbox" data-filter-pet value="dog"> Dog</label>
+        <label><input type="checkbox" data-filter-pet value="cat"> Cat</label>
+      </div>
+      <div class="filter-group">
+        <h5>Price</h5>
+        <input type="range" min="10" max="200" value="200" data-price>
+        <div data-price-lbl style="margin-top:8px;font-size:.85rem;color:var(--muted)">Up to $200</div>
+      </div>
+    </aside>
+
+    <div>
+      <div class="shop-toolbar">
+        <div class="shop-search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" placeholder="Search products…" data-shop-search>
+        </div>
+        <span class="shop-count" data-count></span>
+        <select class="shop-sort" data-sort>
+          <option value="feat">Featured</option>
+          <option value="pop">Most Popular</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+      <div class="prod-grid" data-shop-grid></div>
+    </div>
+
+  </div>
+</section>
+
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
